@@ -1,11 +1,4 @@
-load wine_dataset
-k = 3;
-X_train = wineInputs';
-for i = 1:3
-    p = find(wineTargets(i,:)==1);
-    wineTargets(i,p) = i;
-end
-Y = sum(wineTargets);
+%load dataset
 %%
 [numData,numFeature] = size(X_train);
 Y_unique = unique(Y);
