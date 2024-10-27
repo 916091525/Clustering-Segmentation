@@ -1,7 +1,5 @@
-X_train = readmatrix('E:\Datesets\glass\glass.xlsx');
-Y = readmatrix('E:\Datesets\glass\Y.xlsx');
-
-%seed = load('D:\机器学习\项目\聚类\最优k分割\代码\kmeansTest_randseed_wine.mat');
+X_train = readmatrix('path of dataset');
+Y = readmatrix('path of dataset');
 
 [numData,numFeature] = size(X_train);
 Y_unique = unique(Y);
